@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop the latest products at our e-commerce store. Great prices and fast shipping.">
-  <meta name="keywords" content="e-commerce, online store, shopping, products">
-  <title>E-commerce Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Our E-commerce Store</h1>
-    <nav>
-      <ul>
-        <li><a href="#" aria-label="Home">Home</a></li>
-        <li><a href="#" aria-label="Products">Products</a></li>
-        <li><a href="#" aria-label="About Us">About Us</a></li>
-        <li><a href="#" aria-label="Contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Simple E-commerce</h1>
+        <div class="cart">
+            <span>🛒 Cart (<span id="cart-count">0</span>)</span>
+        </div>
+    </header>
 
-  <main>
-    <section id="products">
-      <div class="product">
-        <img src="product1.jpg" alt="Image of Product 1">
-        <h2>Product 1</h2>
-        <p>$99.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <!-- More product items can be added here -->
-    </section>
-  </main>
+    <main>
+        <div class="product-list">
+            <div class="product" data-id="1" data-price="29.99">
+                <h2>Product 1</h2>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-price="49.99">
+                <h2>Product 2</h2>
+                <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-price="19.99">
+                <h2>Product 3</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Simple E-commerce</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
